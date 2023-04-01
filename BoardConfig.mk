@@ -188,12 +188,9 @@ VENDOR_SECURITY_PATCH := 2022-04-01
 
 
 # SELinux
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+BOARD_SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/samsung_slsi/sepolicy/common/private \
-    $(DEVICE_PATH)/sepolicy/private
-
-
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+    $(DEVICE_PATH)/sepolicy/private \
     device/samsung_slsi/sepolicy/common/public
 
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
